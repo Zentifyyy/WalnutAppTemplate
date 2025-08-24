@@ -11,3 +11,5 @@ bin-int/
 
 # Exclude
 !vendor/bin
+/vendor/bin
+/WalnutApp/logs

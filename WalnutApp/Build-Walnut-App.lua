@@ -9,11 +9,11 @@ project "WalnutApp"
 
    includedirs
    {
-      "../Walnut/vendor/imgui",
-      "../Walnut/vendor/glfw/include",
+      "../vendor/Walnut/vendor/imgui",
+      "../vendor/Walnut/vendor/glfw/include",
 
-      "../Walnut/Walnut/Source",
-      "../Walnut/Walnut/Platform/GUI",
+      "../vendor/Walnut/Walnut/Source",
+      "../vendor/Walnut/Walnut/Platform/GUI",
 
       "%{IncludeDir.VulkanSDK}",
       "%{IncludeDir.glm}",
