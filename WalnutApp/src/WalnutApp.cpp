@@ -63,7 +63,7 @@ Walnut::Application* Walnut::CreateApplication(int argc, char** argv)
 	spec.CustomTitlebar = true;
 
 	spec.IconPath = "img/AppIcon.png";
-
+	
 	// Now you can customise your titlebars colours from here
 	spec.TitlebarButtonColour = ImColor(255, 225, 135, 100);
 	spec.TitlebarButtonHoveredColour = ImColor(255, 225, 135, 60);
@@ -73,12 +73,15 @@ Walnut::Application* Walnut::CreateApplication(int argc, char** argv)
 	spec.TitlebarPaddingY = 9.0f;
 	spec.TitlebarHeight = 64.0f;
 
-	// You can disable logging to decrease file clutter
+	// And you can disable logging to lower file clutter
 	spec.UseLogging = false;
+
+	// You can now change the size of the logo on the titlebar
+	spec.LogoSize = { 48.0f, 48.0f };
 
 	Walnut::Application* app = new Walnut::Application(spec);
 
-	// You can also set the applications icon to a .png
+	//And you can set the applications icon to a .png
 
 	// Note: Application icon has to be in the same relitive directory
 	// to the exe for distibution or the exe wont launch due to missing
